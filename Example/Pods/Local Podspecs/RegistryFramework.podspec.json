@@ -1,0 +1,22 @@
+{
+  "name": "RegistryFramework",
+  "version": "0.1.0",
+  "summary": "A short description of RegistryFramework.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/ritesh-kanchalwar/RegistryFramework",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ritesh-kanchalwar": "ritesh.kanchalwar@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/ritesh-kanchalwar/RegistryFramework.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "RegistryFramework/Classes/**/*"
+}

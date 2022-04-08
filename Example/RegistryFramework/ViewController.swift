@@ -7,11 +7,15 @@
 //
 
 import UIKit
+import RegistryFramework
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let obj = Service.printMessage()
+        print(obj)
         // Do any additional setup after loading the view, typically from a nib.
     }
 

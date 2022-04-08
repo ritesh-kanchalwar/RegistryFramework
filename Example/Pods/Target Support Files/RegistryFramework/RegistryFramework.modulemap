@@ -1,0 +1,6 @@
+framework module RegistryFramework {
+  umbrella header "RegistryFramework-umbrella.h"
+
+  export *
+  module * { export * }
+}
