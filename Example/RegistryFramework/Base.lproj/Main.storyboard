@@ -20,18 +20,35 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RtX-FN-qD5">
-                                <rect key="frame" x="97.5" y="318" width="180.5" height="31"/>
+                                <rect key="frame" x="107.5" y="275.5" width="160.5" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Click to Launch Registry"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Launch Registry(XIB)"/>
                                 <connections>
                                     <action selector="launchRegistry:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Uwq-VN-82g"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9KQ-wF-9eI">
+                                <rect key="frame" x="175.5" y="326.5" width="24" height="14"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6VJ-65-YdP">
+                                <rect key="frame" x="95" y="360.5" width="185" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Launch Registry(SwiftUI)"/>
+                                <connections>
+                                    <action selector="launchRegistryFromSwiftUI:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="X8e-NN-nKF"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="RtX-FN-qD5" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="PiD-Ip-oye"/>
-                            <constraint firstItem="RtX-FN-qD5" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="akG-w8-DbA"/>
+                            <constraint firstItem="6VJ-65-YdP" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="MUr-ns-Kdd"/>
+                            <constraint firstItem="9KQ-wF-9eI" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="O8X-r6-DLx"/>
+                            <constraint firstItem="9KQ-wF-9eI" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="SfF-Qx-0xl"/>
+                            <constraint firstItem="RtX-FN-qD5" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="YkK-nd-3rX"/>
+                            <constraint firstItem="RtX-FN-qD5" firstAttribute="bottom" secondItem="9KQ-wF-9eI" secondAttribute="top" constant="-20" id="c8e-L5-ES3"/>
+                            <constraint firstItem="6VJ-65-YdP" firstAttribute="top" secondItem="9KQ-wF-9eI" secondAttribute="bottom" constant="20" id="iPz-8v-CGn"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="IAD-qL-a2m"/>

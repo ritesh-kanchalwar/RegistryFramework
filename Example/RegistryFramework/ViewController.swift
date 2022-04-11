@@ -8,9 +8,15 @@
 
 import UIKit
 import RegistryFramework
+import SwiftUI
 
 class ViewController: UIViewController {
 
+    private lazy var embedController: UIHostingController<RegistryViewControllerSwiftUI> = {
+            let controller = UIHostingController(rootView: RegistryViewControllerSwiftUI())
+            return controller
+        }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,6 +35,12 @@ class ViewController: UIViewController {
                     let objRegistryViewController = RegistryViewController(nibName: "RegistryViewController", bundle: podBundle)
                          self.navigationController!.pushViewController(objRegistryViewController, animated: true)
     }
-
+    
+    @IBAction func launchRegistryFromSwiftUI(_ sender: UIButton) {
+        self.navigationController?.pushViewController(embedController, animated: true)
+    }
+    
 }
+
+
 
