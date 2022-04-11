@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RegistryFramework'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'This is a short description for RegistryFramework.'
 
 # This description is used to generate tags and improve search results.
@@ -27,6 +27,10 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/ritesh-kanchalwar/RegistryFramework.git', :tag => s.version.to_s }
   s.ios.deployment_target = '15.0'
   s.source_files = 'Classes/**/*.swift'
+  s.resource_bundles = {
+      'RegistryFramework' => 'RegistryFramework/Classes/**/*.{png,xib,storyboard}'
+  }
+  
   s.swift_version = '5.0'
   s.platforms = {
     "ios": "13.0"
