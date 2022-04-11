@@ -23,6 +23,12 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func launchRegistry(_ sender: UIButton) {
+        let podBundle = Bundle(for:RegistryViewController.self)
+                    let objRegistryViewController = RegistryViewController(nibName: "RegistryViewController", bundle: podBundle)
+                         self.navigationController!.pushViewController(objRegistryViewController, animated: true)
+    }
 
 }
 

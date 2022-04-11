@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RegistryFramework'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'This is a short description for RegistryFramework.'
 
 # This description is used to generate tags and improve search results.

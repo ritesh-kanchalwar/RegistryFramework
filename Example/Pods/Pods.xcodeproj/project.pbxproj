@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2094FCEF280405B900765A7F /* RegistryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2094FCED280405B900765A7F /* RegistryViewController.swift */; };
+		2094FCF0280405B900765A7F /* RegistryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2094FCEE280405B900765A7F /* RegistryViewController.xib */; };
 		4CBC0F3C58D9E581ECA2F377F18E78DD /* RegistryFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B932DEDCE3C3D0D0698AAA604946AA82 /* RegistryFramework-dummy.m */; };
 		50C56876280041210099D35C /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C56875280041210099D35C /* Service.swift */; };
 		52B3D855F8D4A6FDFD9CD87345E012B4 /* RegistryFramework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B5E4DC49E1C59548DCC430A61B3E0DB2 /* RegistryFramework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -41,6 +43,8 @@
 		08C5778F2EC63890B520FB6FCB6A823C /* Pods-RegistryFramework_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RegistryFramework_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		0AA413210AF4B157CF79ED5DD6C508E2 /* RegistryFramework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RegistryFramework-prefix.pch"; sourceTree = "<group>"; };
 		13C6D5722341C027859922A1BFCE9682 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		2094FCED280405B900765A7F /* RegistryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistryViewController.swift; sourceTree = "<group>"; };
+		2094FCEE280405B900765A7F /* RegistryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistryViewController.xib; sourceTree = "<group>"; };
 		2E76F871B5C9871D15416668F0B1DBA3 /* RegistryFramework.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = RegistryFramework.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		2FE9E06EF5D8863BA31ACF9DE3131B83 /* Pods-RegistryFramework_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RegistryFramework_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3225ADCA6E37488B35A0B65546107F49 /* Pods-RegistryFramework_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RegistryFramework_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -110,6 +114,15 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
+		2094FCEC280405A400765A7F /* FirstView */ = {
+			isa = PBXGroup;
+			children = (
+				2094FCED280405B900765A7F /* RegistryViewController.swift */,
+				2094FCEE280405B900765A7F /* RegistryViewController.xib */,
+			);
+			path = FirstView;
+			sourceTree = "<group>";
+		};
 		337F66E501A7135456BF4BB0CD7AAB15 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +161,7 @@
 		50C56874280040CC0099D35C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2094FCEC280405A400765A7F /* FirstView */,
 				50C56875280041210099D35C /* Service.swift */,
 			);
 			path = Classes;
@@ -358,6 +372,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2094FCF0280405B900765A7F /* RegistryViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +400,7 @@
 			files = (
 				4CBC0F3C58D9E581ECA2F377F18E78DD /* RegistryFramework-dummy.m in Sources */,
 				50C56876280041210099D35C /* Service.swift in Sources */,
+				2094FCEF280405B900765A7F /* RegistryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
